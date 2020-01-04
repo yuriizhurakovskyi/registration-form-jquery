@@ -17,7 +17,7 @@ function sendDataByGetMethod() {
 	};
 	$.ajax({
 		contentType : 'application/json',
-		url : 'http://localhost:3000/formGet?lName=' + userData.lName
+		url : '/formGet?lName=' + userData.lName
 			+ '&fName=' + userData.fName + '&age=' + userData.age
 			+ '&address=' + userData.address,
 		success : function(data) {
@@ -36,7 +36,7 @@ function sendDataByPostMethod() {
 			address : $('#userAddressPost').val()
 		}),
 		contentType : 'application/json',
-		url : 'http://localhost:3000/formPost',
+		url : '/formPost',
 		success : function(data) {
 			console.log('success');
 			console.log(JSON.stringify(data));
