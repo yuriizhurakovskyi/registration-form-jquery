@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+<style>
+* {
+	color: #254e77;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	width: 400px;
+	text-align: center;
+}
+
+.sendButton {
+	line-height: 1.5;
+	border-radius: 5px;
+	margin: 15px;
+	padding: 8px 40px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	color: white;
+	background: #254e77;
+	font-weight: bold;
+}
+
+.sendButton:focus {
+	outline: none
+}
+
+.sendButton:hover {
+	box-shadow: 0 0 10px rgba(37, 78, 119, 0.5);
+}
+
+.sendButton:active {
+	transform: translateY(3px);
+}
+
+.dataField {
+	height: 15px;
+	width: 200px;
+	border-radius: 4px;
+	border: 1px solid lightblue;
+	background: white;
+	padding: 11px 12px;
+	border-radius: 4px;
+	margin: 10px 5px;
+	font-size: 16px
+}
+
+.dataField:focus {
+	outline: none
+}
+
+label {
+	font-size: 22px;
+	display: inline-block;
+	width: 200px;
+	margin: 10px 5px;
+}
+
+.dataField:hover {
+	border-color: lightblue;
+	box-shadow: 0 0 4px lightblue;
+}
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Registration Form(GET)</h1>
+
+		<form action="">
+			<label>Lastname</label><input type="text" id="userLastNameGet"
+				class="dataField"> <label>Firstname</label><input
+				type="text" id="userFirstNameGet" class="dataField"> <label>Age</label><input
+				type="text" id="userAgeGet" class="dataField"> <label>Address</label>
+			<input type="text" id="userAddressGet" class="dataField"><br>
+			<input type="button" id="sendButton1" class="sendButton" value="Send">
+		</form>
+	</div>
+	<div class="container">
+		<h1>Registration Form(POST)</h1>
+
+		<form action="">
+			<label>Lastname</label><input type="text" id="userLastNamePost"
+				class="dataField"> <label>Firstname</label><input
+				type="text" id="userFirstNamePost" class="dataField"> <label>Age</label><input
+				type="text" id="userAgePost" class="dataField"> <label>Address</label>
+			<input type="text" id="userAddressPost" class="dataField"><br>
+			<input type="button" id="sendButton2" class="sendButton" value="Send">
+		</form>
+	</div>
+	<script src="jqueryScript.js"></script>
+</body>
+</html>
